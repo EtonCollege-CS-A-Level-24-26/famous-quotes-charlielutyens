@@ -14,12 +14,18 @@ class FamousQuotesViewModel {
     var isShowingAddQuote: Bool
     var newQuoteAuthor: String
     var newQuoteContent: String
+    var isShowingEditQuote: Bool
+    var editQuoteAuthor: String
+    var editQuoteContent: String
     
     init() {
         self.quotes = []
         self.isShowingAddQuote = false
         self.newQuoteAuthor = ""
         self.newQuoteContent = ""
+        self.isShowingEditQuote = false
+        self.editQuoteAuthor = ""
+        self.editQuoteContent = ""
     }
     
     func restoreQuotes() {
@@ -36,4 +42,8 @@ class FamousQuotesViewModel {
         newQuoteContent = ""
         isShowingAddQuote = false
     }
+    
+//    func swipteToDeleteQuote() {
+//        let quote = Quote(author: )
+//    }
 }
